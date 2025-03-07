@@ -298,6 +298,7 @@ table {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+    border: 2px solid #ffd700;
 }
 
 th, td {
@@ -315,6 +316,17 @@ th {
 
 tr:hover {
     background: rgba(255, 215, 0, 0.1);
+}
+
+td[rowspan], td[colspan] {
+    background: rgba(75, 44, 32, 0.7); 
+    font-weight: bold;
+}
+
+thead th[colspan] {
+    background: rgba(75, 44, 32, 0.9);
+    font-size: 1.3em;
+    text-align: center;
 }
 
 section h2 {
