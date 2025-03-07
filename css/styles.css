@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Georgia', serif;
+    background: url('hogwarts-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f5f5f5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(75, 44, 32, 0.9);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid #ffd700;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+}
+
+h2 {
+    color: #847210;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+p {
+    color: #e3c831;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 215, 0, 0.2);
+    color: #fff;
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+}
+
+main {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(51, 51, 51, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.4);
+    border: 2px solid #ffd700;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+iframe {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+.houses-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.house-card {
+    display: flex;
+    align-items: center;
+    background: rgba(51, 51, 51, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.4);
+    border: 2px solid #ffd700;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.house-card img {
+    width: 200px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.house-info {
+    text-align: left;
+    color: #f5f5f5;
+}
+
+.house-info h2 {
+    font-size: 2em;
+    color: #ffd700;
+}
+
+.house-info h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #ffd700;
+}
+
+.house-info ol {
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+.house-info ol li {
+    margin-bottom: 5px;
+}
+
+.sorting-form {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.4);
+    border: 2px solid #bfa76f;
+    color: #bfa76f;
+    font-family: 'Georgia', serif;
+    text-align: left;
+}
+
+.sorting-form label {
+    font-size: 1.1em;
+    display: block;
+    margin-top: 10px;
+    color: #bfa76f;
+}
+
+.sorting-form input,
+.sorting-form select,
+.sorting-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 2px solid #bfa76f;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #bfa76f;
+}
+
+button {
+    background: #bfa76f;
+    color: #000;
+    font-size: 1.1em;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #8c7853;
+    box-shadow: 0 0 12px rgba(191, 167, 111, 0.6);
+}
+
+.video-container {
+    position: relative;
+    width: 100%; 
+    max-width: 600px; 
+    padding-bottom: 56.25%; 
+    margin: 20px auto; 
+    overflow: hidden; 
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+    background: #fffefe; 
+
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; 
+}
+section {
+    width: 100%;
+    overflow: hidden; 
+    padding: 20px 0; 
+}
+
+.instructions {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.instructions:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+.instructions a {
+    color: #ffd700; /* Color dorado */
+    text-decoration: underline;
+}
+
+.instructions a:hover {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+
+.tabla-personajes {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(51, 51, 51, 0.9);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ffd700;
+    color: #ffd700;
+}
+
+th {
+    background: rgba(75, 44, 32, 0.9);
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background: rgba(255, 215, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.5em; /* Tamaño del título */
+    color: #ffd700; /* Color dorado */
+    text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.8); /* Sombra dorada */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.experiencia-texto {
+    font-size: 1.4em; 
+    line-height: 1.6; 
+    color: #f5f5f5; 
+    margin-bottom: 20px; 
+    text-align: justify; 
+    padding: 10px; 
+    background: rgba(51, 51, 51, 0.8); 
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5); 
+}
+
+.experiencia nav ul li a {
+    font-size: 1.2em !important;
+}

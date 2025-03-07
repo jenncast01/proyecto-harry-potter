@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo de Hogwarts</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mapa Interactivo de Hogwarts</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="casas.html">Casas</a></li>
+                <li><a href="peliculas.html">Películas</a></li>
+                <li><a href="formulario.html">Sombrero Seleccionador</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p class="instructions">Pasa el cursor sobre las secciones de Hogwarts y haz clic para obtener más información.</p>
+
+        <div class="map-container">
+            <img src="img/mapahg.jpg" usemap="#mapahogwarts" alt="Mapa de Hogwarts">
+        </div>
+
+        <map name="mapahogwarts">
+            <area target="_parent" alt="Hogsmeade" title="Hogsmeade" href="https://harrypotter.fandom.com/es/wiki/Hogsmeade" coords="158,268,152,288,144,309,150,336,163,352,188,348,212,351,228,347,242,342,259,337,275,332,291,327,291,315,304,311,308,302,307,291,296,278,278,263,259,260,231,260,187,256" shape="poly">
+            <area target="_parent" alt="Hagrid's hut" title="Hagrid's hut" href="https://www.harrypotter.com/fact-file/locations/hagrids-hut" coords="199,377,180,391,163,408,157,418,153,439,160,448,180,443,200,446,226,443,232,438,239,419,243,406,242,398,230,391,230,378,213,377" shape="poly">
+            <area target="_parent" alt="The Forbidden Forest" title="The Forbidden Forest" href="https://www.harrypotter.com/fact-file/locations/the-forbidden-forest" coords="663,265,669,283,672,300,667,327,667,351,667,376,664,400,608,404,534,371,523,336,496,324,488,299,506,284,526,273,595,269" shape="poly">
+            <area target="_parent" alt="Quidditch pitch" title="Quidditch pitch" href="https://www.harrypotter.com/fact-file/locations/quidditch-pitch" coords="349,276,368,277,389,272,395,277,395,289,400,300,400,318,395,330,382,340,363,340,347,338,346,325,342,308,344,288" shape="poly">
+            <area target="_parent" alt="The Whomping Willow" title="The Whomping Willow" href="https://www.harrypotter.com/fact-file/plants-and-potions/the-whomping-willow" coords="528,389,542,387,558,387,574,393,580,398,579,411,572,426,570,436,556,446,546,442,536,436" shape="poly">
+        </map>
+
+    </div>
+
+    <footer>
+        © 2025 Mapa Interactivo de Hogwarts
+    </footer>
+
+</body>
+</html>

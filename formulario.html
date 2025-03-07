@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombrero Seleccionador</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>¡Déjate elegir por el Sombrero Seleccionador!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="casas.html">Casas</a></li>
+                <li><a href="peliculas.html">Películas</a></li>
+                <li><a href="formulario.html">Sombrero Seleccionador</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="sorting-hat">
+            <img src="https://voldemorianos.com/wp-content/uploads/2024/06/%C2%BFComo-Funciona-el-Sombrero-Seleccionador-en-Harry-Potter.jpg" alt="Sombrero Seleccionador">
+            <p>"Hmm... Veo en ti mucho valor, pero también astucia. ¿Dónde te pondré?"</p>
+        </div>
+
+        <form class="sorting-form">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Harry Potter" required>
+        
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="11" max="18" placeholder="Ingresa tu edad" required>
+        
+            <label for="casa">¿A qué casa quieres ir?</label>
+            <select id="casa" name="casa">
+                <option value="">Déjalo al Sombrero...</option>
+                <option value="gryffindor">Gryffindor</option>
+                <option value="hufflepuff">Hufflepuff</option>
+                <option value="ravenclaw">Ravenclaw</option>
+                <option value="slytherin">Slytherin</option>
+            </select>
+        
+            <label>¿Qué cualidad te representa más?</label>
+            <div class="radio-group">
+                <input type="radio" id="valor" name="cualidad" value="valor">
+                <label for="valor">Valentía</label>
+        
+                <input type="radio" id="lealtad" name="cualidad" value="lealtad">
+                <label for="lealtad">Lealtad</label>
+        
+                <input type="radio" id="sabiduria" name="cualidad" value="sabiduria">
+                <label for="sabiduria">Sabiduría</label>
+        
+                <input type="radio" id="ambicion" name="cualidad" value="ambicion">
+                <label for="ambicion">Ambición</label>
+            </div>
+        
+            <label for="mascota">Elige una mascota:</label>
+            <select id="mascota" name="mascota">
+                <option value="lechuza">Lechuza</option>
+                <option value="sapo">Sapo</option>
+                <option value="gato">Gato</option>
+                <option value="rata">Rata</option>
+            </select>
+        
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ejemplo: harry@hogwarts.com" required>
+        
+            <label for="comentario">¿Qué esperas de Hogwarts?</label>
+            <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu respuesta aquí..."></textarea>
+        
+            <button type="submit">Ser seleccionado</button>
+        </form>
+        
+    </main>
+</body>
+</html>
+
